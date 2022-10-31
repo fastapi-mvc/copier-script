@@ -11,20 +11,21 @@ _envops:
   variable_end_string: "}}"
   variable_start_string: "{{"
 
+_tasks:
+  - "chmod +x {{script_name}}.sh"
+
 # TEMPLATE QUESTIONS
-project_name:
+script:
   type: str
-  help: >-
-    What's your project name?
+  help: What is your new shell script name?
 
-    Do not use dots or spaces in the name; just "A-Za-z0-9-_" please.
-
-name:
-  type: str
-  help: What is the name to greet for the generator hello world example?
+nix:
+  type: bool
+  help: Do you want to use nix-sell (shebang header)?
+  default: yes
 
 # TEMPLATE NONE-CONFIGURABLE DEFAULTS
-package_name:
+script_name:
   type: str
-  default: "{{ project_name|lower|replace(' ','_')|replace('-','_') }}"
+  default: "{{ script|lower|replace(' ','_')|replace('-','_') }}"
   when: false

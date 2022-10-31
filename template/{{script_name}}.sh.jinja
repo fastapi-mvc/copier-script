@@ -1,0 +1,18 @@
+{%- if nix -%}
+#! /usr/bin/env nix-shell
+#! nix-shell -p coreutils -i bash
+#! nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-22.05.tar.gz
+{%- else -%}
+#!/usr/bin/env bash
+{% endif %}
+
+if [ -n "$DEBUG" ]; then
+	set -x
+fi
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+echo "Hello world!"
+
