@@ -6,4 +6,4 @@ generator: script
 generator_name: script
 license: MIT
 nix: true
-repo_url: https://your.repo.url.here
+repo_url: https://github.com/fastapi-mvc/copier-script

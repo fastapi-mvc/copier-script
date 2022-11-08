@@ -13,14 +13,14 @@ Prerequisites:
 * copier 6.2.0 or later
 
 ```shell
-copier copy "https://your.repo.url.here.git" /path/to/your/new/project
+copier copy "https://github.com/fastapi-mvc/copier-script.git" /path/to/your/new/project
 ```
 
 ## Using Nix
 
 ```shell
 nix-shell shell.nix
-copier copy "https://your.repo.url.here.git" /path/to/your/new/project
+copier copy "https://github.com/fastapi-mvc/copier-script.git" /path/to/your/new/project
 ```
 
 ## Updating
