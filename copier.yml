@@ -12,7 +12,7 @@ _envops:
   variable_start_string: "{{"
 
 _tasks:
-  - "chmod +x {{script_name}}.sh"
+  - "chmod +x {{script_name}}"
 
 # TEMPLATE QUESTIONS
 script:
@@ -27,5 +27,5 @@ nix:
 # TEMPLATE NONE-CONFIGURABLE DEFAULTS
 script_name:
   type: str
-  default: "{{ script|lower|replace(' ','_')|replace('-','_') }}"
+  default: "{{ script|lower|replace(' ','_') }}"
   when: false
