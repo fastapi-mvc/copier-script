@@ -4,6 +4,19 @@ Copier template for scaffolding new script upon [fastapi-mvc](https://github.com
 
 ## Quickstart
 
+### Using fastapi-mvc
+
+Prerequisites:
+* fastapi-mvc
+* Git 2.27 or newer
+
+```shell
+git clone "https://github.com/fastapi-mvc/copier-script.git"
+FMVC_PATH="$PWD:$FMVC_PATH" fastapi-mvc generate script /path/to/your/new/script
+```
+
+### Using copier
+
 To use this template outside `fastapi-mvc`:
 
 Prerequisites:
