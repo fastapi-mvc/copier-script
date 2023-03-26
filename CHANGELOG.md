@@ -2,6 +2,13 @@
 
 This file documents changes to [copier-script](https://github.com/fastapi-mvc/copier-script). The release numbering uses [semantic versioning](http://semver.org).
 
+## 0.1.2 (26.03.2023)
+
+### Internal
+
+* Update generator with changes from [copier-generator](https://github.com/fastapi-mvc/copier-generator) 0.4.1 release. PR [#2](https://github.com/fastapi-mvc/copier-script/pull/2)
+
+
 ## 0.1.1 (10.02.2023)
 
 ### Internal
